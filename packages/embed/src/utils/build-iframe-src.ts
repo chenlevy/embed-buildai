@@ -76,7 +76,7 @@ const getBaseUrl = (formString: string, domain = DEFAULT_DOMAIN, chat = false): 
     return new URL(formString)
   }
 
-  const prefix = chat ? 'c' : 'to'
+  const prefix = chat ? 'app' : 'app'
   return new URL(`https://${domain}/${prefix}/${formString}`)
 }
 
