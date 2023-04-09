@@ -141,7 +141,7 @@ jobs:
 
       - run: yarn release:preview
         env:
-          AWS_ASSETS_BUCKET: 'typeform-public-assets/embed'
+          AWS_ASSETS_BUCKET: 'buildai-public-assets/embed'
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_KEY }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}

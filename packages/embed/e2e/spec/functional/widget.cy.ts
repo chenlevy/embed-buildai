@@ -25,7 +25,7 @@ function testWidget(path: string, title: string) {
     it('should pass options as query param', () => {
       cy.get('.tf-v1-widget iframe')
         .invoke('attr', 'src')
-        .should('contain', 'typeform-embed=embed-widget&typeform-source=localhost&typeform-medium=demo-test')
+        .should('contain', 'buildai-embed=embed-widget&buildai-source=localhost&buildai-medium=demo-test')
     })
 
     it('should pass hidden fields as hash', () => {

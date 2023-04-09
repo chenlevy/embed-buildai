@@ -23,7 +23,7 @@ function testSlider(path: string, title: string) {
     it('should pass options as query param', () => {
       cy.get('.tf-v1-slider iframe')
         .invoke('attr', 'src')
-        .should('contain', 'typeform-embed=popup-drawer&typeform-source=localhost&typeform-medium=demo-test')
+        .should('contain', 'buildai-embed=popup-drawer&buildai-source=localhost&buildai-medium=demo-test')
     })
 
     it('should close slider', () => {

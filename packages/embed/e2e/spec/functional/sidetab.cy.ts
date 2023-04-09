@@ -31,7 +31,7 @@ function testSidetab(path: string, title: string) {
     it('should pass options as query param', () => {
       cy.get('.tf-v1-sidetab-wrapper iframe')
         .invoke('attr', 'src')
-        .should('contain', 'typeform-embed=popup-side-panel&typeform-source=localhost&typeform-medium=demo-test')
+        .should('contain', 'buildai-embed=popup-side-panel&buildai-source=localhost&buildai-medium=demo-test')
     })
 
     it('should pass hidden fields as hash', () => {

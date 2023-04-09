@@ -23,7 +23,7 @@ function testPopup(path: string, title: string) {
     it('should pass options as query param', () => {
       cy.get('.tf-v1-popup iframe')
         .invoke('attr', 'src')
-        .should('contain', 'typeform-embed=popup-blank&typeform-source=localhost&typeform-medium=demo-test')
+        .should('contain', 'buildai-embed=popup-blank&buildai-source=localhost&buildai-medium=demo-test')
     })
 
     it('should pass hidden fields as hash', () => {

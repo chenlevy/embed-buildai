@@ -143,7 +143,7 @@ https://github.com/nodejs/release#release-schedule
 
 ### Bug Fixes
 
-* **DIST-1792:** Pass typeform-embed-auto-resize to embedded form ([ff580e0](https://github.com/Typeform/embed/commit/ff580e01c5e4bef51bb24dcf1c2456c4300ca6f7))
+* **DIST-1792:** Pass buildai-embed-auto-resize to embedded form ([ff580e0](https://github.com/Typeform/embed/commit/ff580e01c5e4bef51bb24dcf1c2456c4300ca6f7))
 
 # [@typeform/embed-v1.37.0](https://github.com/Typeform/embed/compare/@typeform/embed-v1.36.1...@typeform/embed-v1.37.0) (2022-08-04)
 

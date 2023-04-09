@@ -50,11 +50,11 @@ const mapOptionsToQueryParams = (
   } = options
   const transitiveParams = getTransitiveSearchParams(transitiveSearchParams)
   const params = {
-    'typeform-embed-id': embedId,
-    'typeform-embed': typesToEmbed[type],
-    'typeform-source': source,
-    'typeform-medium': medium,
-    'typeform-medium-version': mediumVersion,
+    'buildai-embed-id': embedId,
+    'buildai-embed': typesToEmbed[type],
+    'buildai-source': source,
+    'buildai-medium': medium,
+    'buildai-medium-version': mediumVersion,
     'embed-hide-footer': hideFooter ? 'true' : undefined,
     'embed-hide-headers': hideHeaders ? 'true' : undefined,
     'embed-opacity': opacity,
@@ -63,10 +63,10 @@ const mapOptionsToQueryParams = (
     'share-ga-instance': shareGaInstance ? 'true' : undefined,
     'force-touch': forceTouch ? 'true' : undefined,
     'add-placeholder-ws': type === 'widget' && displayAsFullScreenModal ? 'true' : undefined,
-    'typeform-embed-redirect-target': redirectTarget,
-    'typeform-embed-auto-resize': autoResize ? 'true' : undefined,
-    'typeform-embed-disable-scroll': disableScroll ? 'true' : undefined,
-    'typeform-embed-handle-ending-button-click': !!onEndingButtonClick ? 'true' : undefined,
+    'buildai-embed-redirect-target': redirectTarget,
+    'buildai-embed-auto-resize': autoResize ? 'true' : undefined,
+    'buildai-embed-disable-scroll': disableScroll ? 'true' : undefined,
+    'buildai-embed-handle-ending-button-click': !!onEndingButtonClick ? 'true' : undefined,
   }
   return { ...params, ...transitiveParams, ...tracking }
 }

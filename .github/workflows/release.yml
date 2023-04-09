@@ -52,7 +52,7 @@ jobs:
 
       - run: yarn release
         env:
-          AWS_ASSETS_BUCKET: 'typeform-public-assets/embed'
+          AWS_ASSETS_BUCKET: 'buildai-public-assets/embed'
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY }}
           AWS_CLOUDFRONT_DIST: 'E3IUO95IYL1RI3'
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_KEY }}
