@@ -30,7 +30,7 @@ document.getElementById('button').onclick = toggle
 Or via HTML:
 
 ```html
-<button data-tf-popup="<form-id>">open form</button>
+<button data-bai-popup="<form-id>">open form</button>
 <script src="//embed.typeform.com/next/embed.js"></script>
 ```
 
@@ -47,7 +47,7 @@ createSlider('<form-id>', options)
 ```
 
 ```html
-<a data-tf-slider="<form-id>">click to open</a>
+<a data-bai-slider="<form-id>">click to open</a>
 ```
 
 Side tab:
@@ -59,7 +59,7 @@ createSidetab('<form-id>', options)
 ```
 
 ```html
-<div data-tf-sidetab="<form-id>" data-tf-button-text="click to open"></div>
+<div data-bai-sidetab="<form-id>" data-bai-button-text="click to open"></div>
 ```
 
 Popover:
@@ -71,7 +71,7 @@ createPopover('<form-id>', options)
 ```
 
 ```html
-<div data-tf-popover="<form-id>"></div>
+<div data-bai-popover="<form-id>"></div>
 ```
 
 ## Examples

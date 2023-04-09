@@ -36,7 +36,7 @@ createWidget('<form-id>', { container: document.querySelector('#form') })
 As HTML, the CSS is imported automatically. Place this code where you want to display your form.
 
 ```html
-<div data-tf-widget="<form-id>"></div>
+<div data-bai-widget="<form-id>"></div>
 <script src="//embed.typeform.com/next/embed.js"></script>
 ```
 
@@ -163,13 +163,13 @@ Closing and opening a typeform in modal window will restart the progress from th
 
 ### Options in plain HTML embed
 
-- to embed via HTML without writing JavaScript code, use `data-tf-widget="<form-id>"` for widget embed (see example above)
-- define options as data attributes with `data-tf-` prefix and dashes in name (eg. `autoFocus` becomes `data-tf-auto-focus`)
-- set a boolean property to `true` by omitting attribute value, (eg. `<div ... data-tf-disable-footer></div>`
-- pass function name for callbacks, eg. `data-tf-on-ready="myReadyFunction"` if this function is available on global scope (eg. `window`)
-- to pass `string[]` use comma-separated string, eg. `transitiveSearchParams: ['foo', 'bar']` becomes `data-tf-transitive-search-params="foo,bar"`
-- to pass `object` pass comma-separated key=value pairs, eg. `hidden: { foo: "f", bar: "b" }` becomes `data-tf-hidden="foo=f,bar=b"`
-  - **Note:** since commas `,` are used as delimiter for each value you will need to escape them with backward slash, eg. `data-tf-hidden="foo=foo\,bar"`. In JavaScript you don't need to escape it.
+- to embed via HTML without writing JavaScript code, use `data-bai-widget="<form-id>"` for widget embed (see example above)
+- define options as data attributes with `data-bai-` prefix and dashes in name (eg. `autoFocus` becomes `data-bai-auto-focus`)
+- set a boolean property to `true` by omitting attribute value, (eg. `<div ... data-bai-disable-footer></div>`
+- pass function name for callbacks, eg. `data-bai-on-ready="myReadyFunction"` if this function is available on global scope (eg. `window`)
+- to pass `string[]` use comma-separated string, eg. `transitiveSearchParams: ['foo', 'bar']` becomes `data-bai-transitive-search-params="foo,bar"`
+- to pass `object` pass comma-separated key=value pairs, eg. `hidden: { foo: "f", bar: "b" }` becomes `data-bai-hidden="foo=f,bar=b"`
+  - **Note:** since commas `,` are used as delimiter for each value you will need to escape them with backward slash, eg. `data-bai-hidden="foo=foo\,bar"`. In JavaScript you don't need to escape it.
 
 ### Custom Launch Options
 
@@ -193,12 +193,12 @@ For details see [behavioral demo](../demo-html/public/behavioral-html).
 
 ### Share Google Analytics Instance
 
-You can use `shareGaInstance: true` (or `data-tf-share-ga-instance`) attribute if both your page and your typeform are using Google Analytics. This will make sure the session is shared and Google Analytics will track only 1 user when they visit you page with an embedded typeform.
+You can use `shareGaInstance: true` (or `data-bai-share-ga-instance`) attribute if both your page and your typeform are using Google Analytics. This will make sure the session is shared and Google Analytics will track only 1 user when they visit you page with an embedded typeform.
 
 If you have more than 1 Google Analytics tracking codes in your website you can provide an ID to specify which tracker to use, eg:
 
 ```html
-<div data-tf-widget="<form-id>" data-tf-share-ga-instance="UA-XXXXXX-XX"></div>
+<div data-bai-widget="<form-id>" data-bai-share-ga-instance="UA-XXXXXX-XX"></div>
 ```
 
 or
@@ -303,7 +303,7 @@ This is related to all embeds:
 You can chain multiple typeforms inside an embed. You need to [setup a redirect to another typeform](https://www.typeform.com/help/a/redirect-to-url-or-redirect-with-end-screens-360060589532/):
 
 - make sure to use URL with `typeform.com` domain in case you have a custom domain set up
-- set `redirectTarget` / `data-tf-redirect-target` to `_self` to make the redirect inside the embed iframe
+- set `redirectTarget` / `data-bai-redirect-target` to `_self` to make the redirect inside the embed iframe
 
 When you chain multiple typeforms they will be all displayed inside the embed and all embed options and callbacks will be preserved.
 You can use `formId` in the callback payload to identify which form is currently displayed.

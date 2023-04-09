@@ -101,7 +101,7 @@ export const loadOptionsFromAttributes = (element: HTMLElement, transform: Recor
   return Object.keys(transform).reduce((options, key) => {
     return {
       ...options,
-      [key]: transformAttributeValue(element.getAttribute(`data-tf-${camelCaseToKebabCase(key)}`), transform[key]),
+      [key]: transformAttributeValue(element.getAttribute(`data-bai-${camelCaseToKebabCase(key)}`), transform[key]),
     }
   }, {} as any)
 }

@@ -165,10 +165,10 @@ describe('load-options-from-attributes', () => {
   describe('#loadOptionsFromAttributes', () => {
     const wrapper = document.createElement('div')
     wrapper.innerHTML = `<div id="element"
-        data-tf-string-param="foo"
-        data-tf-empty-string-param
-        data-tf-bool-param
-        data-tf-bool-param-yes="yes"
+        data-bai-string-param="foo"
+        data-bai-empty-string-param
+        data-bai-bool-param
+        data-bai-bool-param-yes="yes"
       ></div>`
 
     it('should load correct options', () => {

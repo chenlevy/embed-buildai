@@ -42,7 +42,7 @@ createWidget('<form-id>', { container: document.querySelector('#form') })
 As HTML, the CSS is imported automatically. Place this code where you want to display your form.
 
 ```html
-<div data-tf-widget="<form-id>"></div>
+<div data-bai-widget="<form-id>"></div>
 <script src="//embed.typeform.com/next/embed.js"></script>
 ```
 

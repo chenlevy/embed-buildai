@@ -11,7 +11,7 @@ describe('Reload and reload methods', () => {
         .should('match', /form\.typeform\.com\/to\/HLjqXS5W/)
 
       cy.window().then((win) => {
-        win.document.querySelector('body')!.innerHTML += '<div data-tf-widget="HLjqXS5W"></div>'
+        win.document.querySelector('body')!.innerHTML += '<div data-bai-widget="HLjqXS5W"></div>'
         ;(win as any).tf.load()
 
         cy.get('iframe').should('have.length', 2)

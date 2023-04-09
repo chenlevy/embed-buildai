@@ -21,7 +21,7 @@ export const initialize = async (
       if (!formId) {
         throw new Error(`Invalid ${embedElementAttribute}=${formId} for embed #${index}`)
       }
-      if (element.hasAttribute('data-tf-hubspot')) {
+      if (element.hasAttribute('data-bai-hubspot')) {
         await waitForHubspotCookie()
       }
       factoryMethod(formId, buildOptionsFromAttributes(element), element)

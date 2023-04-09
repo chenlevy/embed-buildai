@@ -20,7 +20,7 @@ createWidget('<form-id>', { container: document.querySelector('#form') })
 Or via HTML:
 
 ```html
-<div data-tf-widget="<form-id>"></div>
+<div data-bai-widget="<form-id>"></div>
 <script src="//embed.typeform.com/next/embed.js"></script>
 ```
 
@@ -45,7 +45,7 @@ createWidget('<form-id>', {
 Or via HTML:
 
 ```html
-<div data-tf-widget="<form-id>" data-tf-hide-headers data-tf-hide-footer data-tf-opacity="0" id="form"></div>
+<div data-bai-widget="<form-id>" data-bai-hide-headers data-bai-hide-footer data-bai-opacity="0" id="form"></div>
 <script src="//embed.typeform.com/next/embed.js"></script>
 ```
 
@@ -78,7 +78,7 @@ Via HTML:
     </style>
   </head>
   <body>
-    <div id="form" data-tf-widget="<form-id>"></div>
+    <div id="form" data-bai-widget="<form-id>"></div>
     <script src="//embed.typeform.com/next/embed.js"></script>
   </body>
 </html>

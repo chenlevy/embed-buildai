@@ -39,8 +39,8 @@ createWidget("moe6aa", {
 Or via HTML:
 ```html
 <div
-  data-tf-widget="<form-id>"
-  data-tf-hidden="full_name=John Doe,email=john@example.com"
+  data-bai-widget="<form-id>"
+  data-bai-hidden="full_name=John Doe,email=john@example.com"
 ></div>
 <script src="//embed.typeform.com/next/embed.js"></script>
 ```
@@ -63,8 +63,8 @@ createWidget("moe6aa", {
 Or via HTML:
 ```html
 <div
-  data-tf-widget="<form-id>"
-  data-tf-transitive-search-params="full_name,email"
+  data-bai-widget="<form-id>"
+  data-bai-transitive-search-params="full_name,email"
 ></div>
 <script src="//embed.typeform.com/next/embed.js"></script>
 ```

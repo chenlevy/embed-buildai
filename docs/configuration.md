@@ -21,10 +21,10 @@ const options = {
 createWidget('<form-id>', options)
 ```
 
-If you embed via HTML, you need to pass optinos as attributes with `data-tf-` prefix:
+If you embed via HTML, you need to pass optinos as attributes with `data-bai-` prefix:
 
 ```html
-<a data-tf-popup="<form-id>" data-tf-size="50" data-tf-hide-footer>open</a>
+<a data-bai-popup="<form-id>" data-bai-size="50" data-bai-hide-footer>open</a>
 <script src="//embed.typeform.com/next/embed.js"></script>
 ```
 
@@ -76,19 +76,19 @@ If you embed via HTML, you need to pass optinos as attributes with `data-tf-` pr
 
 ## Options in plain HTML embed
 
-To embed via HTML without writing JavaScript code, use `data-tf-widget="<form-id>"` for widget embed. You can define options as data attributes with `data-tf-` prefix and dashes in name (eg. `autoFocus` becomes `data-tf-auto-focus`). For example:
+To embed via HTML without writing JavaScript code, use `data-bai-widget="<form-id>"` for widget embed. You can define options as data attributes with `data-bai-` prefix and dashes in name (eg. `autoFocus` becomes `data-bai-auto-focus`). For example:
 
 ```html
-<div data-tf-popup="<form-id>" data-tf-size="50" data-tf-hide-footer></div>
+<div data-bai-popup="<form-id>" data-bai-size="50" data-bai-hide-footer></div>
 <script src="//embed.typeform.com/next/embed.js"></script>
 ```
 
 To set different option types:
 
-- set a boolean property to `true` by omitting attribute value, (eg. `<div ... data-tf-disable-footer></div>`
-- pass function name for callbacks, eg. `data-tf-on-ready="myReadyFunction"` if this function is available on global scope (eg. `window`)
-- to pass `string[]` use coma-separated string, eg. `transitiveSearchParams: ['foo', 'bar']` becomes `data-tf-transitive-search-params="foo,bar"`
-- to pass `object` pass coma-separated key=value pairs, eg. `hidden: { foo: "f", bar: "b" }` becomes `data-tf-hidden="foo=f,bar=b"`
+- set a boolean property to `true` by omitting attribute value, (eg. `<div ... data-bai-disable-footer></div>`
+- pass function name for callbacks, eg. `data-bai-on-ready="myReadyFunction"` if this function is available on global scope (eg. `window`)
+- to pass `string[]` use coma-separated string, eg. `transitiveSearchParams: ['foo', 'bar']` becomes `data-bai-transitive-search-params="foo,bar"`
+- to pass `object` pass coma-separated key=value pairs, eg. `hidden: { foo: "f", bar: "b" }` becomes `data-bai-hidden="foo=f,bar=b"`
 
 ## Custom Launch Options
 
@@ -125,7 +125,7 @@ createPopup('<form-id>', {
 Or in HTML:
 
 ```html
-<a data-tf-popup="<form-id>" data-tf-open="time" data-tf-open-value="60000"></a>
+<a data-bai-popup="<form-id>" data-bai-open="time" data-bai-open-value="60000"></a>
 <script src="//embed.typeform.com/next/embed.js"></script>
 ```
 
@@ -155,7 +155,7 @@ You can supply a target for typeform redirect (on submit or via ending). It work
 You can chain multiple typeforms inside an embed. You need to [setup a redirect to another typeform](https://www.typeform.com/help/a/redirect-to-url-or-redirect-with-end-screens-360060589532/):
 
 - make sure to use URL with `typeform.com` domain in case you have a custom domain set up
-- set `redirectTarget` / `data-tf-redirect-target` to `_self` to make the redirect inside the embed iframe
+- set `redirectTarget` / `data-bai-redirect-target` to `_self` to make the redirect inside the embed iframe
 
 When you chain multiple typeforms they will be all displayed inside the embed and all embed options and callbacks will be preserved.
 You can use `formId` in the callback payload to identify which form is currently displayed.

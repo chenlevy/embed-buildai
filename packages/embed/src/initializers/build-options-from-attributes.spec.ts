@@ -4,31 +4,31 @@ describe('build-options-from-attributes', () => {
   describe('#buildOptionsFromAttributes', () => {
     const wrapper = document.createElement('div')
     wrapper.innerHTML = `<div id="element"
-        data-tf-source="unit-test-source"
-        data-tf-medium="unit-test-medium"
-        data-tf-medium-version="unit-test-version"
-        data-tf-hide-footer="yes"
-        data-tf-hide-headers="no"
-        data-tf-opacity="50"
-        data-tf-disable-tracking
-        data-tf-disable-auto-focus
-        data-tf-on-ready="onTypeformReady"
-        data-tf-on-submit="onTypeformSubmit"
-        data-tf-on-question-changed="onTypeformQuestionChanged"
-        data-tf-on-height-changed="onTypeformHeightChanged"
-        data-tf-auto-resize="100,300"
-        data-tf-open="exit"
-        data-tf-open-value="3000"
-        data-tf-hidden="foo=foo value,bar=some bar value"
-        data-tf-chat
-        data-tf-share-ga-instance="ua-hello-1"
-        data-tf-tracking="utm_foo=utm foo value,foobar=foobar value"
-        data-tf-redirect-target="_blank"
-        data-tf-domain="custom.example.com"
-        data-tf-lazy
-        data-tf-keep-session
-        data-tf-disable-scroll
-        data-tf-full-screen
+        data-bai-source="unit-test-source"
+        data-bai-medium="unit-test-medium"
+        data-bai-medium-version="unit-test-version"
+        data-bai-hide-footer="yes"
+        data-bai-hide-headers="no"
+        data-bai-opacity="50"
+        data-bai-disable-tracking
+        data-bai-disable-auto-focus
+        data-bai-on-ready="onTypeformReady"
+        data-bai-on-submit="onTypeformSubmit"
+        data-bai-on-question-changed="onTypeformQuestionChanged"
+        data-bai-on-height-changed="onTypeformHeightChanged"
+        data-bai-auto-resize="100,300"
+        data-bai-open="exit"
+        data-bai-open-value="3000"
+        data-bai-hidden="foo=foo value,bar=some bar value"
+        data-bai-chat
+        data-bai-share-ga-instance="ua-hello-1"
+        data-bai-tracking="utm_foo=utm foo value,foobar=foobar value"
+        data-bai-redirect-target="_blank"
+        data-bai-domain="custom.example.com"
+        data-bai-lazy
+        data-bai-keep-session
+        data-bai-disable-scroll
+        data-bai-full-screen
       ></div>`
 
     it('should load correct options', () => {

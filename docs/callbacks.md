@@ -40,7 +40,7 @@ createWidget('<form-id>', {
 Or in HTML:
 
 ```html
-<div data-tf-widget="<form-id>" data-tf-on-ready="ready"></div>
+<div data-bai-widget="<form-id>" data-bai-on-ready="ready"></div>
 <script src="//embed.typeform.com/next/embed.js"></script>
 <script>
   // this function needs to be available on global scope (window)
@@ -72,7 +72,7 @@ createPopup('<form-id>', {
 Or in HTML:
 
 ```html
-<button data-tf-popup="<form-id>" data-tf-on-submit="submit">open</button>
+<button data-bai-popup="<form-id>" data-bai-on-submit="submit">open</button>
 <script src="//embed.typeform.com/next/embed.js"></script>
 <script>
   // this function needs to be available on global scope (window)
@@ -104,7 +104,7 @@ createPopup('<form-id>', {
 Or in HTML:
 
 ```html
-<button data-tf-popup="<form-id>" data-tf-on-close="close">open</button>
+<button data-bai-popup="<form-id>" data-bai-on-close="close">open</button>
 <script src="//embed.typeform.com/next/embed.js"></script>
 <script>
   // this function needs to be available on global scope (window)
@@ -138,7 +138,7 @@ createSlider('<form-id>', {
 Or in HTML:
 
 ```html
-<button data-tf-slider="<form-id>" data-tf-on-question-changed="changed">open</button>
+<button data-bai-slider="<form-id>" data-bai-on-question-changed="changed">open</button>
 <script src="//embed.typeform.com/next/embed.js"></script>
 <script>
   // this function needs to be available on global scope (window)
@@ -170,7 +170,7 @@ createSlider('<form-id>', {
 Or in HTML:
 
 ```html
-<button data-tf-slider="<form-id>" data-tf-on-height-changed="changed">open</button>
+<button data-bai-slider="<form-id>" data-bai-on-height-changed="changed">open</button>
 <script src="//embed.typeform.com/next/embed.js"></script>
 <script>
   // this function needs to be available on global scope (window)
@@ -180,7 +180,7 @@ Or in HTML:
 </script>
 ```
 
-**Tip:** To automatically resize widget embed to fit typeform height, use `autoResize` option. You can specify minimum and maximum heights in pixels, eg. `data-tf-auto-resize="300,800"`.
+**Tip:** To automatically resize widget embed to fit typeform height, use `autoResize` option. You can specify minimum and maximum heights in pixels, eg. `data-bai-auto-resize="300,800"`.
 
 ## onEndingButtonClick
 
@@ -205,7 +205,7 @@ createSlider('<form-id>', {
 Or in HTML:
 
 ```html
-<button data-tf-slider="<form-id>" data-tf-on-ending-button-click="clicked">open</button>
+<button data-bai-slider="<form-id>" data-bai-on-ending-button-click="clicked">open</button>
 <script src="//embed.typeform.com/next/embed.js"></script>
 <script>
   // this function needs to be available on global scope (window)
